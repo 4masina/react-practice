@@ -1,6 +1,6 @@
 import Header from './Header'
 import Footer from './Footer'
-import Home from './Home'
+import Content from './Content'
 
 function App() {
  
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Header />
-    <Home />
+    <Content />
     <Footer />  
     </>
   )
