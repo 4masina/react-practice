@@ -1,5 +1,5 @@
 import React from "react";
-import CheckList Item from "./CheckListItem";
+import CheckListItem from "./CheckListItem";
 
 const Content = () => {
     let toDoList = [
@@ -9,7 +9,8 @@ const Content = () => {
     ];
     let mappingToDoList = toDoList.map(({ label, text }) => (
         <CheckListItem key={label} label={label} text={text} />
-    )   
+    ));
+    return <>{mappingToDoList</>   
 };
 
 export default Content;
