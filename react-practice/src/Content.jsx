@@ -2,15 +2,17 @@ import React from "react";
 import CheckListItem from "./CheckListItem";
 
 const Content = () => {
+    // Define your to-do list here. Each item should be an object with label and text properties.
     let toDoList = [
-        { label: "Work", Text: "Work"},
-        { label: "Read a Book", Text: "Read a book"},
-        { label: "GoToGym", text: "Go To Gym"},
+        { label: "Work", Text: "Work",  checked: false },
+        { label: "Read a Book", Text: "Read a book", checked: false },
+        { label: "GoToGym", text: "Go To Gym", checked:false },
     ];
-    let mappingToDoList = toDoList.map(({ label, text }) => (
-        <CheckListItem key={label} label={label} text={text} />
+    const handleUserClick = (e) => {setCheckedItems...CheckListItem.onChange(index)} checked={toDoList[index].checked} />
+    const mappingToDoList = toDoList.map(({ label, text }) => (
+        <CheckListItecm handleUserClick = {handleUserClick} label={label} text={text} checked={checked} />
     ));
-    return <>{mappingToDoList</>   
+    return <>{mappingToDoList}</>   
 };
 
 export default Content;
